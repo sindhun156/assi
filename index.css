@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.head{
+    display:grid;
+    grid-template-rows: 1fr;
+}
+.image1{
+    width: 100%;
+}
+.grid1,.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+.houseimage,.photoimage{
+    width: 100%;
+}
+.aboutname{
+    font-size: 26px;
+}
+.aboutposition{
+    font-size: 18px;
+    color: rgb(90, 89, 89);
+}
+.aboutdescription{
+    font-size: 18px;
+}
+.aboutbutton{
+    width: 100%;
+    border: 0;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+.aboutbutton:hover{
+    background-color: rgb(185, 183, 183);
+}
+.form{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+.contactbutton{
+    background-color: black;
+    color: white;
+    border: 0;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.mapgrid
+{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.mapimage{
+    width: 100%;
+    margin-top:40px ;
+}
+.grid{
+    margin: 30px;
+}
+.projecthead{
+    font-size: 22px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: white;
+}
+.head1
+{
+    width: 160px;
+}
+.head2{
+    flex: 1;
+}
+.head3{
+    width: 90px;
+}
+.head1,.head3{
+    padding: 8px;
+}
+.head1:hover,.head3:hover{
+    background-color: gray;
+}
+
+@media (max-width:600px){
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:601px) and (max-width:995px){
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:996px) {
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:600px){
+    .grid2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:601px) and (max-width:990px){
+    .grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (min-width:991px){
+    .grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
